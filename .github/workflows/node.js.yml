@@ -34,10 +34,9 @@ jobs:
     - name: SSH and deploy node app
       uses: appleboy/ssh-action@master
       with:
-        host: ${{ secrets.SSH_HOST }}
-        username: ${{ secrets.SSH_USERNAME }}
+        host: 45.8.248.192
+        username: viktor
         key: ${{ secrets.SSH_KEY }}
-        port: 22
         script: |
           cd ~/cicd-example-app
           git pull origin master
