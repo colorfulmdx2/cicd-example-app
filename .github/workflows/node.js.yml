@@ -37,6 +37,7 @@ jobs:
         host: ${{ secrets.SSH_HOST }}
         username: ${{ secrets.SSH_USERNAME }}
         key: ${{ secrets.SSH_KEY }}
+        port: 22
         script: |
           cd ~/cicd-example-app
           git pull origin master
