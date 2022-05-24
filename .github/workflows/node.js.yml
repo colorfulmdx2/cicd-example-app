@@ -41,4 +41,5 @@ jobs:
           cd ~/cicd-example-app
           git pull origin master
           npm install
+          npm run build
           pm2 restart cicd-example-app
